@@ -21,6 +21,9 @@ Login/settings.py에서 자신의 MySQL 비밀번호로 수정.
 4. 테이블 생성 및 서버 실행
 python manage.py migrate
 python manage.py runserver
-5. 회원가입 및 로그인
+5. 회원가입 및 로그인, 로그아웃, 비밀번호 변경, 회원 탈퇴
 회원가입 : POST /api/users/register/
-로그인 : POST /api/users/login/
+로그인 (토큰 발급) : POST /api/users/login/
+로그아웃 (토큰 삭제) : POST /api/users/logout/
+비밀번호 변경 : PUT /api/users/change-password/
+회원 탈퇴 : DELETE /api/users/delete/
