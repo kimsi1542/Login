@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Login_db',
         'USER': 'root',
-        'PASSWORD': 'YOUR_PASSWORD_HERE',  # 자신의 MYSQL서버의 비밀번호 넣기
+        'PASSWORD': '1542',  # 자신의 MYSQL서버의 비밀번호 넣기
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -131,3 +131,4 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
 }
+AUTH_USER_MODEL = 'users.User'
